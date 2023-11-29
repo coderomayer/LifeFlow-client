@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 const Profile = () => {
 
-    const {user} = useContext(userAuth)
+   
     const {id} = useParams()
 
     const {data: userData} = useQuery({
