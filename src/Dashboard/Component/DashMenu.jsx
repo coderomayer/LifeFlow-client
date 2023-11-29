@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {
   AppstoreOutlined,
   ShopOutlined,
@@ -7,12 +7,15 @@ import {
 } from "@ant-design/icons";
 import { Layout, Menu, theme } from 'antd';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { userAuth } from '../../Provider/AuthProvider';
 const { Header, Content, Footer, Sider } = Layout;
 
 
 
 
 const DashMenu = () => {
+
+  const {user} = useContext(userAuth)
 
 
   const location = useLocation();
@@ -34,7 +37,7 @@ const DashMenu = () => {
     {
       label: "Profile",
       icon: <ShopOutlined />,
-      key: "profile",
+      key: `profile/${user._id}`,
     },
     {
       label: "Orders",

@@ -49,7 +49,7 @@ const Router = createBrowserRouter([
     element: <DashboardMain></DashboardMain>,
     children: [
       {
-        path: "profile",
+        path: "profile/:id",
         element: <Profile></Profile>,
       },
     ],
