@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { userAuth } from "../../Provider/AuthProvider";
-import { useContext } from "react";
+
 import { useParams } from "react-router-dom";
 
 const Profile = () => {
