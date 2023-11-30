@@ -37,12 +37,12 @@ const DashMenu = () => {
     {
       label: "Profile",
       icon: <ShopOutlined />,
-      key: `profile/${user._id}`,
+      key: `/dashboard/profile`,
     },
     {
-      label: "Orders",
+      label: "Donation Request",
       icon: <ShoppingCartOutlined />,
-      key: "/orders",
+      key: "/dashboard/create-donation-request",
     },
     {
       label: "Customers",

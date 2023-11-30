@@ -10,6 +10,8 @@ import Login from "../Pages/Login";
 import DashboardMain from "../Layout/DashboardMain";
 
 import Profile from "../Dashboard/Page/Profile";
+import UpdateUser from "../Dashboard/Page/UpdateUser";
+import CreateDonationRequest from "../Dashboard/Page/CreateDonationRequest ";
 
 
 const Router = createBrowserRouter([
@@ -48,10 +50,23 @@ const Router = createBrowserRouter([
     path: '/dashboard',
     element: <DashboardMain></DashboardMain>,
     children: [
+
       {
-        path: "profile/:id",
+        path: "profile",
         element: <Profile></Profile>,
       },
+
+      {
+        path: "update-user/:id",
+        element: <UpdateUser></UpdateUser>
+      },
+
+      {
+        path: "create-donation-request",
+        element: <CreateDonationRequest></CreateDonationRequest>
+      }
+
+
     ],
   },
 ]);
