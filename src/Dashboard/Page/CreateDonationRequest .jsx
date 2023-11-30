@@ -12,7 +12,7 @@ const CreateDonationRequest = () => {
     const { data: districtData, isError, isLoading } = useQuery({
         queryKey: ["districtData"],
         queryFn: async () => {
-            const response = await fetch('http://localhost:3000/district');
+            const response = await fetch('https://life-flow-server-ten.vercel.app/district');
             const data = await response.json();
             return data; // Adjust this based on your actual response structure
         }
@@ -22,7 +22,7 @@ const CreateDonationRequest = () => {
     const { data: upazilaData, isError: upazilaError, isLoading: upazilaLoading } = useQuery({
         queryKey: ["upazilaData"],
         queryFn: async () => {
-            const response = await fetch('http://localhost:3000/upazila');
+            const response = await fetch('https://life-flow-server-ten.vercel.app/upazila');
             const data = await response.json();
             return data; // Adjust this based on your actual response structure
         }
@@ -58,7 +58,7 @@ const CreateDonationRequest = () => {
         };
 
         // Send donation request data to the server
-        const serverResponse = await fetch('http://localhost:3000/donation-requests', {
+        const serverResponse = await fetch('https://life-flow-server-ten.vercel.app/donation-requests', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

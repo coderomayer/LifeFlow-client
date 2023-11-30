@@ -11,7 +11,7 @@ const Profile = () => {
     const { data: userData } = useQuery({
         queryKey: ["userData", user?.email],
         queryFn: async () => {
-            const response = await fetch(`http://localhost:3000/users/${user?.email}`);
+            const response = await fetch(`https://life-flow-server-ten.vercel.app/users/${user?.email}`);
             const data = await response.json();
             return data;
         }

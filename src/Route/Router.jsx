@@ -12,6 +12,7 @@ import DashboardMain from "../Layout/DashboardMain";
 import Profile from "../Dashboard/Page/Profile";
 import UpdateUser from "../Dashboard/Page/UpdateUser";
 import CreateDonationRequest from "../Dashboard/Page/CreateDonationRequest ";
+import PrivetRout from "../Provider/PrivetRout";
 
 
 const Router = createBrowserRouter([
@@ -46,9 +47,10 @@ const Router = createBrowserRouter([
       },
     ],
   },
+
   {
     path: '/dashboard',
-    element: <DashboardMain></DashboardMain>,
+    element: <PrivetRout><DashboardMain></DashboardMain></PrivetRout> ,
     children: [
 
       {
