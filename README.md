@@ -1,8 +1,6 @@
 # Blood Donation Application
 
-**Front-end Live Site Link:** [Blood Donation Application](https://lifeflow-25df5.web.app/)  
-**Client Side GitHub Repository Link:** [Client Repository](https://github.com/programming-hero-web-course1/b8a12-client-side-coderomayer)  
-**Server Side GitHub Repository Link:** [Server Repository](https://github.com/programming-hero-web-course1/b8a12-server-side-coderomayer)
+**Live Site Link:** [Blood Donation Application](https://lifeflow-25df5.web.app/)  
 
 The Blood Donation Application is a comprehensive platform designed to streamline blood donation activities, fostering a seamless connection between donors and individuals in need of blood. Implemented using the MERN stack (MongoDB, Express.js, React, Node.js), the application features user-friendly registration, authentication, and role-based access control. It empowers users with distinct roles—Admins with comprehensive access, Donors who can register and manage donation requests, and Volunteers responsible for creating and overseeing donation requests.
 
